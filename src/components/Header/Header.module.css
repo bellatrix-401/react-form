@@ -1,0 +1,17 @@
+.main {
+  background-color: transparent;
+  color: var(--primary);
+  padding: 3rem;
+  width: 100%;
+}
+
+.main h1 {
+  font-weight: 600;
+  max-width: var(--max-width);
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    padding: 2rem;
+  }
+}

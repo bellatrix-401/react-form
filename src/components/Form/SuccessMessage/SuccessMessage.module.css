@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.main i {
+  color: var(--success);
+  font-size: 130px;
+}
