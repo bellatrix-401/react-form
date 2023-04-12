@@ -1,0 +1,35 @@
+.main {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: auto;
+  max-width: 540px;
+  min-width: 200px;
+  padding: 40px 60px;
+  position: relative;
+}
+
+.main h2 {
+  padding: 20px 0px;
+}
+
+.actions {
+  bottom: 40px;
+  display: flex;
+  gap: var(--gap);
+  justify-content: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    padding: 20px;
+    gap: var(--gap-mobile);
+  }
+
+  .main h2 {
+    padding: 10px 0px;
+  }
+}
