@@ -20,7 +20,19 @@ export const create = async (payload: RegisterState, file: File) => {
 }
 
 const saveSession = (formData: FormData) => {
-  const object = {}
-  formData.forEach((value, key) => (object[key] = value))
-  sessionStorage.setItem('payload', JSON.stringify(object))
+  const obj = {
+    fullName: '',
+    email: '',
+    password: '',
+    name: '',
+    phone: '',
+    category: '',
+    address: '',
+    file: '',
+  }
+
+  formData.forEach(
+    (value, key) => (obj[key as keyof typeof obj] = value.toString())
+  )
+  sessionStorage.setItem('payload', JSON.stringify(obj))
 }

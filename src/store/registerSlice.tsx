@@ -18,7 +18,7 @@ export interface RegisterState {
 }
 
 // Initial state
-export const initialState: RegisterState = {
+const initialState: RegisterState = {
   // Personal
   fullName: '',
   email: '',
