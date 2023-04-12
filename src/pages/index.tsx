@@ -39,11 +39,7 @@ const Home = () => {
       <Header />
 
       <main className={styles.main}>
-        <Form
-          saveRegister={saveRegister}
-          sendForm={sendForm}
-          state={registerState}
-        />
+        <Form saveRegister={saveRegister} sendForm={sendForm} />
       </main>
     </>
   )
