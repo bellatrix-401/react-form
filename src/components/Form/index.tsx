@@ -11,7 +11,7 @@ import { useState } from 'react'
 const StepsManage = [Personal, Business, SuccessMessage]
 
 type FormProps = {
-  sendForm: (data: RegisterState, file: File) => boolean
+  sendForm: (data: RegisterState, file: File) => Promise<boolean>
   saveRegister: (data: RegisterState) => void
 }
 
@@ -32,7 +32,7 @@ const Form: React.FC<FormProps> = ({ saveRegister, sendForm }) => {
 
   const validate = async (data: RegisterState) => {
     if (file) {
-      const result = sendForm(data, file)
+      const result = await sendForm(data, file)
       if (result) setSuccess(true)
     } else window.alert('Please attach a file')
   }
