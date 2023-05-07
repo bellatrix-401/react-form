@@ -1,0 +1,3 @@
+My digital nomads
+
+Create a React component that allows compliance registration. THE REACT FORM will enable users to register their personal and business details such as company name, corporation date, address, and an option to upload documents. The data must be stored in a redux and once all elements have been CAPTURED, encrypt them and sent them via https post to an external web service (there is no need to implement the endpoint).
